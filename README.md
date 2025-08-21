@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ## ⚙️ Configuration
 
-* Modify the `accelerate_temp.yaml` file to configure your cluster environment settings (such as number of processes, nodes, etc.).
+* Modify the `accelerate_config.yaml` file to configure your cluster environment settings (such as number of processes, nodes, etc.).
 * Update the `job.sh` SLURM script according to your job submission preferences.
 * Before running the script run `python model_download.py` it will download all the models.
 * Place your image data and corresponding annotation maps in the `data/` directory, structured appropriately for your use case.
