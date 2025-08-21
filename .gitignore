@@ -1,0 +1,5 @@
+/logs
+logs_*
+temp
+/src/__pycache__/
+/src/my_utils/__pycache__/

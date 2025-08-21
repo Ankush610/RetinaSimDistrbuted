@@ -84,6 +84,18 @@ def parse_args_unpaired_training():
         help="Whether or not to use gradient checkpointing to save memory at the expense of slower backward pass.")
     parser.add_argument("--enable_xformers_memory_efficient_attention", action="store_true", help="Whether or not to use xformers.")
 
+    #Modified by me 
+    parser.add_argument(
+        "--stopping_criterion",
+        type=str,
+        default="steps",
+        choices=["epochs", "steps"],
+        help=(
+            "Choose when to stop training: 'epochs' to stop after max_train_epochs, "
+            "'steps' to stop after max_train_steps. Default is 'steps' for backward compatibility."
+        )
+    )
+
     args = parser.parse_args()
     print("Argument Set for Current Session:\n",args)
     return args
