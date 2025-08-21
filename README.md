@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 After setup:
 
-1. Configure your `accelerate_temp.yaml`.
+1. Configure your `accelerate_config.yaml`.
 2. Submit the job using the `job.sh` script in your SLURM-managed environment.
 
 
